@@ -1,0 +1,52 @@
+*{
+
+    padding: 0px;
+
+    margin: 0px;
+
+   
+}
+
+header{
+
+    height: 100px;
+    width: auto;
+    background: #BFB630;
+}
+
+nav{
+
+    height: 30px;
+    width: auto;
+    background-color: black;
+}
+
+main{
+
+    height: 700px;
+    width: auto;
+    background-color: burlywood;
+    text-align: center;
+    padding-top: 300px;
+}
+
+footer{
+
+    height: 100px;
+    width: auto;
+    background-color: brown;
+
+}
+ 
+h2{
+
+    margin: 40px;
+}
+
+form{
+
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}

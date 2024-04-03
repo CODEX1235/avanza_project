@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Gegagedigedagedago</title>
+
+
+
+    <script>
+        function Validadorformulario() {
+
+            let name = document.forms["formulario"]["fname"].value;
+            let Apellido = document.forms["formulario"]["flname"].value;
+            let salario = document.forms["formulario"]["fsalary"].value;
+
+            if (name == "" || Apellido == "" || salario == "") {
+
+                alert("Debe llenar todos los campos!")
+                return false;
+            }
+        }
+
+
+
+    </script>
+
+    <script>
+
+        function imprimirform() {
+            let miformulario = document.forms["formulario"]
+            let texto = '';
+            for (let elemento of miformulario) {
+
+                texto += elemento.value + '<br/>'
+
+            }
+
+            document.getElementById("ver").innerHTML = texto;
+        }
+
+    </script>
+
+
+    <script>
+        function calculosalario() {
+
+            let salario = document.getElementById("fsalary").value;
+
+            let eps = salario * 0.04;
+
+            let pension = salario * 0.04;
+
+            let SalarioNeto = salario - eps - pension;
+
+            if (salario > (salario * 2)) {
+
+                SalarioNeto + 162000
+
+
+            } else if (salario < (salario * 2)) {
+
+                SalarioNeto
+            }
+
+
+
+
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+
+    </header>
+
+
+    <nav>
+
+
+
+    </nav>
+
+
+    <main>
+
+
+        <section id="form">
+
+            <h2> Registrar </h2>
+
+            <form name="formulario" id=" formulario">
+
+                nombre <br> <input type="text" name="fname" id="fname"><br><br>
+
+                Apellido <br> <input type="text" name="flname" id="flname"> <br><br>
+
+                correo electronico <br> <input type="number" name="fsalary" id="fsalary"> <br><br>
+
+
+
+            </form>
+
+            <button id="btnEnviar" onclick="Validadorformulario(), imprimirform()">
+                enviar
+            </button>
+
+        </section>
+
+
+        <section2 id="print">
+
+            <article>
+                <p id="ver"> </p>
+
+            </article>
+
+        </section2>
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+</body>
+
+</html>
